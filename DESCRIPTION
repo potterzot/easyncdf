@@ -1,10 +1,18 @@
-Package: ezncdf
-Title: What the Package Does (one line, title case)
+Package: easyncdf
+Title: Easy Working with NetCDF Files
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person("Nicholas", "Potter", email = "potter.nicholas@gmail.com", role = c("aut", "cre"))
+Description: Working with NetCDF files in R can be unintuitive. This package provides a series of function to allow reading and writing of data following the dplyr syntax.
 Depends: R (>= 3.4.3)
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Suggests: covr
+Imports:
+  ncdf4
+Suggests:
+  covr,
+  testthat,
+    knitr,
+    rmarkdown
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
