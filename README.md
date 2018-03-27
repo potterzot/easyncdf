@@ -34,6 +34,15 @@ a list of tidy data.frames with `read_ncdf(<filename>)`. For larger
 files or specific variables you can set the bounds of any dimension and
 the variables you’d like to read in.
 
+Testing
+-------
+
+A test dataset is included in [tests/data/](tests/data). A simple test
+is to try to read that data into `R` with
+`read_ncdf("tests/data/test.nc4")`. You can also play around with
+defining bounds and variables as (very lightly at the moment) done in
+[tests/testthat/test\_easyncdf.R](tests/testthat/test_easyncdf.R).
+
 License
 -------
 
