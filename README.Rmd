@@ -18,26 +18,21 @@ output:
 
 easyncdf is an `R` package intended to make it easier to work with NetCDF files in `R`. It builds on the functionality in ncdf4 and extends dplyr syntax like `filter` to facilitate familiar reading (and potentially writing) of data from/to NetCDF files.
 
-## Author
+## Installing
 
-Nicholas Potter (potterzot@gmail.com)
+Install like any R package from github:
 
-## Contents
+    library(devtools)
+    install_github('potterzot/easyncdf')
 
-This is the github repository for our paper titled <PAPER TITLE>. Please make use of our work, and if you do, please cite as follows:
+## Usage
 
->  Potter, Nicholas. "<PAPER TITLE>". *<JOURNAL TITLE>* <VOLUME>, no. <NUMBER> (<YEAR>): <PAGES>. doi: https://dx.doi.org/xxxxxx.
-
-## Requirements
-Some specific software (in addition to R, devtools, and some more common R packages) will help to recreate the results for this paper from scratch. The easiest thing would be to clone this package or to install via `devtools`. If you don't want to do that, you can instead install the following:
-
-**To download raw data:**
-* [rnassqs](https://github.com/potterzot/rnassqs)
+If your NetCDF file is small enough, you can read the entire thing into a list of tidy data.frames with `read_ncdf(<filename>)`. For larger files or specific variables you can set the bounds of any dimension and the variables you'd like to read in.
 
 
 ## License
 
-[MIT License](https://opensource.org/licenses/MIT), 2017, Nicholas A Potter
+[MIT License](https://opensource.org/licenses/MIT), 2018, Nicholas A Potter
 
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(
